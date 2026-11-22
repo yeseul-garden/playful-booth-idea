@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><script>
+(function(){
+  'use strict';
+  const config=<?!= bootstrap ?>;
+  let busy=false;
+  const send=m=>window.top.postMessage(Object.assign({boothBridge:1,channel:config.channel},m),config.origin);
+  window.addEventListener('message',e=>{
+    const m=e.data;
+    if(e.source!==window.top||e.origin!==config.origin||!m||m.boothBridge!==1||m.channel!==config.channel||typeof m.id!=='string'||m.action!=='read'||busy)return;
+    busy=true;
+    google.script.run.withSuccessHandler(result=>{busy=false;send({id:m.id,result});})
+      .withFailureHandler(()=>{busy=false;send({id:m.id,error:'SHEET_READ_FAILED'});}).readBoothIdeas();
+  });
+  send({ready:true});
+})();
+</script></body></html>

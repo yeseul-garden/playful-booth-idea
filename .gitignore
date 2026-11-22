@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+.env*
+!.env.example
+*.log
+.sites-runtime/
+test-results/
+dist/
+
+.hallmark/
+
+.qa-plan.local.md
+
+# Site hosting identity stays local.
+.openai/

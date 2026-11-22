@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "PBB Space Grotesk";
+  src: url("./assets/fonts/SpaceGrotesk-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+[data-brand="booth-buddy"] {
+  color-scheme: light;
+  --pbb-cream: #FFF4E0;
+  --pbb-blue: #61C3DE;
+  --pbb-green: #A5C852;
+  --pbb-gold: #BEAF39;
+  --pbb-yellow: #FFEB4B;
+  --pbb-pink: #FF8F8F;
+  --pbb-ink: #282A25;
+  --pbb-bg: var(--pbb-cream);
+  --pbb-surface: #FFFCF5;
+  --pbb-text: var(--pbb-ink);
+  --pbb-text-muted: #66665B;
+  --pbb-line: #D9CFBA;
+  --pbb-control-line: #827B6A;
+  --pbb-primary: var(--pbb-blue);
+  --pbb-primary-hover: #53B7D2;
+  --pbb-primary-active: #45A8C2;
+  --pbb-on-primary: var(--pbb-ink);
+  --pbb-focus: #1C6578;
+  --pbb-success: #3B642C;
+  --pbb-warning: #66561A;
+  --pbb-error: #A33A32;
+  --pbb-disabled-bg: #E9E0CE;
+  --pbb-disabled-text: #827B6A;
+  --pbb-font-ui: "PBB Space Grotesk", -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --pbb-font-code: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --pbb-space-0: 0px;
+  --pbb-space-1: 4px;
+  --pbb-space-2: 8px;
+  --pbb-space-3: 12px;
+  --pbb-space-4: 16px;
+  --pbb-space-6: 24px;
+  --pbb-space-8: 32px;
+  --pbb-space-12: 48px;
+  --pbb-space-16: 64px;
+  --pbb-space-24: 96px;
+  --pbb-radius-sm: 6px;
+  --pbb-radius-md: 12px;
+  --pbb-radius-lg: 20px;
+  --pbb-radius-pill: 999px;
+  --pbb-duration-fast: 120ms;
+  --pbb-duration-normal: 180ms;
+  --pbb-ease: cubic-bezier(.2, 0, 0, 1);
+  --pbb-shadow-card: 0 8px 24px rgb(40 42 37 / 8%);
+  --pbb-max-width: 1200px;
+  --pbb-layer-base: 0;
+  --pbb-layer-sticky: 10;
+  --pbb-layer-popover: 20;
+  --pbb-layer-dialog: 30;
+  --pbb-layer-toast: 40;
+  background: var(--pbb-bg);
+  color: var(--pbb-text);
+  font-family: var(--pbb-font-ui);
+  font-size: 16px;
+  line-height: 1.7;
+}

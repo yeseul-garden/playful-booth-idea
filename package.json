@@ -1,0 +1,20 @@
+{
+  "name": "playful-booth-idea",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A live Google Forms idea wall for event displays",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "test:browser": "node scripts/check-browser.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.18.1"
+  }
+}
